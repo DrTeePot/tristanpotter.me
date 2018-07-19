@@ -1,46 +1,60 @@
-baseurl = "/"
+baseurl         = "/"
+theme           = "casper-two"
+languageCode    = "en-US"
 disqusShortname = ""
-languageCode = "en-US"
-paginate = 6
-theme = "casper-two"
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 200
-[[menu.main]]
-name = "Go"
-url = "/tags/golang/"
-weight = 100
-[[menu.main]]
-name = "Food"
-url = "/categories/food/"
-weight = 99
-[[menu.main]]
-name = "External"
-url = "https://google.com/"
-weight = 95
+paginate        = 6
+#SectionPagesMenu = "main"
+
 [params]
-RSSLink = ""
-author = "EM"
-authorAvatar = "img/ghost-icon.png"
-authorDescription = "Describe yourself.."
-authorLocation = "Bandung, ID"
-authorWebsite = "https://eueung.github.io"
-cover = "img/blog-cover.jpg"
-customCSS = []
-description = "My personal blog."
-fbName = "fakeghost"
-githubName = "eueung"
-googleAnalytics = ""
-logo = "hugo-logo.png"
-metaDescription = ""
-orgDescription = "Here is a description placeholder for your org"
-orgName = "EM"
-orgWebsite = "https://www.telematika.org"
-pageNotFoundTitle = "404 - Page not found"
-singleViewStyle = "casper"
-subtitle = "\"Doubt is not a pleasant condition, but certainty is absurd.\" — Voltaire"
-title = "Tristan Potter"
-twitterName = "faketryghost"
+  title       = "Hugo Casper Two"
+  subtitle    = "Port of Casper 2.x for Hugo"
+
+  cover       = "img/blog-cover.jpg"
+  description = "Here is a description of your site."
+  metaDescription = ""
+  googleAnalytics = ""
+  customCSS = []
+  RSSLink = ""
+
+  twitterName = "faketryghost"
+  fbName = "fakeghost"
+  githubName = "eueung"
+
+  logo = "hugo-logo.png"
+  orgName = "EM"
+  orgWebsite = "https://www.telematika.org"
+  orgDescription = "Here is a description placeholder for your org"
+
+  author = "EM"
+  authorAvatar = "img/ghost-icon.png"
+  authorLocation = "Bandung, ID"
+  authorWebsite = "https://eueung.github.io"
+  authorDescription = "Describe yourself.."
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #casper or caspertwo
+  singleViewStyle = "casper"
+
 [permalinks]
-post = "/:slug/"
+  post = "/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 200
+
+[[menu.main]]
+  name = "Go"
+  url = "/tags/golang/"
+  weight = 100
+
+[[menu.main]]
+  name = "Food"
+  url = "/categories/food/"
+  weight = 99
+
+[[menu.main]]
+  name = "External"
+  url = "https://google.com/"
+  weight = 95
